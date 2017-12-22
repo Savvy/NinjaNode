@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NinjaNode | Register</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <div class="inner-container" style="top: calc(60vh - 450px);">
+    <div class="box">
+      <img src="http://ninjanode-nixreptiles.c9users.io/images/NinjaIconGradientLoginDark.png" alt="Logo">
+      <h1><span class="text">Register</span><br />NinjaPanel</h1>
+      <form action="register" role="form" method="POST" action="http://ninjanode-nixreptiles.c9users.io/register">
+        <input type="hidden" name="_token" value="tDBiR8LyWBXHQnFwdziyxXcUCL7E5CRCQWTHZVXx">
+
+        <div>
+          <input id="name" type="text" name="name" value="" placeholder="Name" required autofocus>
+
+        </div>
+        <div>
+          <input id="email" type="email" name="email" value="" placeholder="Email Address" required>
+
+        </div>
+
+        <input id="password" type="password" name="password" placeholder="Password" required>
+
+        <input id="password-confirm" type="password" name="password_confirmation" placeholder="Confirm Password" required>
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="/login">Login!</a></p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
